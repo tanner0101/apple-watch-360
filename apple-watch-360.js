@@ -39,7 +39,7 @@ var pos = 0;
 
 function load() {
     
-    for(var i = 0; i <= 360; i++) {
+    for(var i = 0; i < 360; i++) {
         preloadImage(urlforpos(i));
     }
     spin();
@@ -50,8 +50,21 @@ function spin() {
     document.body.style.backgroundImage = "url("+urlforpos(pos)+")";
     setTimeout(function(){ spin() }, 80);
     pos += 1;
-    if(pos>360) { pos = 0 };  
+    if(pos>=360) { pos = 0 };  
 
 }
 
 load();
+
+for (var i = 0; i < 40; i++) {
+    var s = '';
+    if (i % 2) { s = '.' };
+    console.log(s);
+}
+console.log('-------------------------------------------------------');
+console.log(' ');
+console.log(' ');
+console.log('                    enjoy');
+console.log('                               -tanner');
+console.log(' ');
+console.log('-------------------------------------------------------');
