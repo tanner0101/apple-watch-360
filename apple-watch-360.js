@@ -32,8 +32,8 @@ function urlforpos(pos) {
     return "http://images.apple.com/media/us/watch/2015/a718f271_b19c_47d8_928d_d108fc5d702a/product-viewer/"+type+"/" + name + "/360/large_2x/jpg/" + name + "_" + leading + pos + ".jpg";
 }
 function preloadImage(url) {
-                var img = new Image();
-                img.src = url;
+    var img = new Image();
+    img.src = url;
 }
 var pos = 0;
 
@@ -63,7 +63,7 @@ for (var i = 0; i < 40; i++) {
 }
 console.log('-------------------------------------------------------');
 console.log(' ');
-console.log(' ');
+console.log('  ');
 console.log('                    enjoy');
 console.log('                               -tanner');
 console.log(' ');
